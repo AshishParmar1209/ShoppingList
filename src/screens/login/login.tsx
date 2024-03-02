@@ -26,7 +26,7 @@ const login = (props: any) => {
             padding: 8,
             paddingTop: 20,
           }}
-          source={require('../../assets/loginvector.jpeg')}
+          source={require('../../assets/loginvector.png')}
         />
         <Text
           style={{

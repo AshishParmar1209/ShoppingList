@@ -12,6 +12,8 @@ import {
   notificationListner,
   requestNotificationPermission,
 } from './src/utils/NotificationManager';
+import {Provider} from 'react-redux';
+import {store} from './src/redux/store/store';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,9 +24,11 @@ const App = () => {
   }, []);
 
   return (
-    <NavigationContainer>
-      <Mainstack />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Mainstack />
+      </NavigationContainer>
+    </Provider>
   );
 };
 

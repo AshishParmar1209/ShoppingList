@@ -7,7 +7,7 @@ const Splash = (props: any) => {
   useEffect(async () => {
     const isLoggedIn = await AsyncStorage.getItem('isLoggedIn');
     if (isLoggedIn == '1') {
-      navigation.navigate('HomeStack', {screen: 'Home'});
+      navigation.navigate('Map');
     } else {
       navigation.navigate('LoginStack', {screen: 'Login'});
     }
